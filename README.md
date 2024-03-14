@@ -1,20 +1,20 @@
 ## SqLVim
 
-SqLVim is a minimalist Vim configuration, crafted to offer the power of modern IDEs while maintaining the lightweight and fast nature of Vim. The primary focus of this configuration is to eliminate lag, particularly when using the `x` command to delete characters in Neovim.
+SqLVim is a minimalist Vim configuration, crafted to offer the power of modern IDEs while maintaining the lightweight and fast nature of Vim. The primary focus of this configuration is to eliminate lag, particularly when using the `x` command to delete characters in Neovim. This is a major issue in popular configs, most well known LazyNvim.
 
 ## Why SqLVim?
 
 - **Minimalist**: SqLVim provides a stripped-down Vim configuration, allowing users to add only the features they need, minimizing bloat.
 - **Speed**: Designed for speed, SqLVim ensures that Vim and Neovim remain responsive even during intensive editing tasks.
-- **Customizable**: Feel free to customize SqLVim according to your preferences. Add plugins, mappings, or configurations as needed.
-- **Ease of Use**: With SqLVim, you get the power of Vim without the steep learning curve. It's simple yet effective.
+- **Customizable**: Feel free to customize SqLVim according to your preferences with lazy. Add plugins, mappings, or configurations as you see fit.
+- **Ease of Use**: With SqLVim it just works. It's simple yet effective.
 
 ## How to Use
 
 step 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/SqLVim.git
+git clone https://github.com/dean-zk/SqLVim.git
 ```
 step 2. There is no step 2. Enjoy your nvim config!
 
