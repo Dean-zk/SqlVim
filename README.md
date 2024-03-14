@@ -16,10 +16,18 @@ Before using SqLVim you need these packages:
 - **Git**: To pull changes.
 - **Unix based system**: Windows works aswell but I recently switched to Arch Linux, so it will be more focussed on UNIX.
 
-step 1. 📡 Clone this repository to your local machine:
+## IMPORTANT ⚠
+If you don't whether you should use the Windows or Unix version. GO WITH WINDOWS! Windows has less terminal functionality than Unix.
+Because of that you are not required to download toals like TMux if you don't feel like it.
 
-```bash
-git clone https://github.com/dean-zk/SqLVim.git
+step 1. 📡 Download the code and put it in the folder/directory based on your system:
+**Unix**
+```
+~/.config/local/nvim
+```
+**Windows:**
+```
+~/.Appdata/local/nvim
 ```
 step 2. There is no step 2. Enjoy your nvim config!
 
