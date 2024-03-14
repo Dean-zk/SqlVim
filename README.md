@@ -21,6 +21,7 @@ If you don't whether you should use the Windows or Unix version. GO WITH WINDOWS
 Because of that you are not required to download toals like TMux if you don't feel like it.
 
 step 1. 📡 Download the code and put it in the folder/directory based on your system:
+
 **Unix**
 ```
 ~/.config/local/nvim
