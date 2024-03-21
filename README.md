@@ -33,8 +33,7 @@ step 1. 📡 Download the code and put it in the folder/directory based on your 
 step 2. There is no step 2. Enjoy your nvim config!
 
 ## What to expect the next major push 💾
-- **TMux**: Out of the box TMux integration (ONLY FOR LINUX AND MAC).
-- **Windows version**: I will probably create 2 nvim files. One for Windows and 1 for Unix.
+- **Adding debuggers?**: The file is there, but haven't actively tried working on it.
 - **Transparency**: With the click of a button you have a transparent terminal editor.
 - **Better documentation**: This is mainly for if you want to make changes.
 
