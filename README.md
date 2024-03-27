@@ -35,7 +35,10 @@ step 2. There is no step 2. Enjoy your nvim config!
 ## What to expect the next major push 💾
 - **Adding debuggers?**: The file is there, but haven't actively tried working on it.
 - **Transparency**: With the click of a button you have a transparent terminal editor.
-- **Better documentation**: This is mainly for if you want to make changes.
+- **Custom LuaLine**: A more compact and less bulky lualine.
+- **Trouble.nvim**: This will add an error window in neovim to show errors in a better way.
+- **Custom errors**: Adding a different way of showing errors.
+- **Cleaning up files**: To enhance performance and keep it bare bone I will try to clean up the files. 
 
 ## Contributing ❤
 
