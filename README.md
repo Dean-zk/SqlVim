@@ -14,6 +14,7 @@ SqLVim is a minimalist Vim configuration, crafted to offer the power of modern I
 Before using SqLVim you need these packages:
 - **NeoVim**: preferably the latest version.
 - **Git**: To pull changes.
+- **NerdFont**: to display icons.
 - **Unix based system**: Windows works aswell but I recently switched to Arch Linux, so it will be more focussed on UNIX.
 
 ## IMPORTANT ⚠
@@ -24,11 +25,11 @@ step 1. 📡 Download the code and put it in the folder/directory based on your 
 
 **Unix**
 ```
-~/.config/local/nvim
+~/.config/nvim
 ```
 **Windows:**
 ```
-~/.Appdata/local/nvim
+Appdata/local/nvim
 ```
 step 2. There is no step 2. Enjoy your nvim config!
 
@@ -38,7 +39,8 @@ step 2. There is no step 2. Enjoy your nvim config!
 - **Custom LuaLine**: A more compact and less bulky lualine.
 - **Trouble.nvim**: This will add an error window in neovim to show errors in a better way.
 - **Custom errors**: Adding a different way of showing errors.
-- **Cleaning up files**: To enhance performance and keep it bare bone I will try to clean up the files. 
+- **Cleaning up files**: To enhance performance and keep it bare bone I will try to clean up the files.
+- **Formatting fix**: I hate the way formatting works right now so I will do my best fixing it in the future.
 
 ## Contributing ❤
 
