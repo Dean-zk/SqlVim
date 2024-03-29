@@ -24,7 +24,7 @@ Before using SqLVim you need these packages:
 
 ## IMPORTANT ⚠
 If you don't know whether you should use the Windows or Unix version. GO WITH WINDOWS! Windows has less terminal functionality than Unix.
-Because of that you are not required to download toals like TMux if you don't feel like it.
+Because of that you are not required to download toals like TMux if you don't feel like it. When following the download steps. Please make sure to remove the folder you don't need
 
 
 ## 👨‍💻 Installing SqLVim 
@@ -54,11 +54,11 @@ mv ~/.cache/nvim{,.bak}
 
 **Windows:**
 ```bash
-git clone https://github.com/SqLait/SqLVim/nvim $env:LOCALAPPDATA\nvim
+git clone https://github.com/SqLait/SqLVim $env:LOCALAPPDATA\nvim
 ```
 **Unix**
 ```bash
-git clone https://github.com/SqLait/SqLVim/nvim-UNIX ~/.config/nvim
+git clone https://github.com/SqLait/SqLVim ~/.config/nvim
 ```
 - **step 3**: There is no step 3. Enjoy your nvim config!
 
