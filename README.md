@@ -1,3 +1,7 @@
+## ⚠ Note regarding SqLVim v1.2.0:
+The new SqLVim update should launch soon, however there is a new component library I'm planning on using for this project. Because of that it will probably take a little longer for future updates.
+I will do my best releasing this as soon as possible 🙏
+
 ## SqLVim
 
 SqLVim is a minimalist Vim configuration, crafted to offer the power of modern IDEs while maintaining the lightweight and fast nature of Vim. The primary focus of this configuration is to eliminate lag, particularly when using the `x` command to delete characters in Neovim. This is a major issue in popular configs, most well known LazyNvim.
