@@ -12,6 +12,7 @@ SqLVim is a minimalist Vim configuration, crafted to offer the power of modern I
 - **Speed**: Designed for speed, SqLVim ensures that Vim and Neovim remain responsive even during intensive editing tasks.
 - **Customizable**: Feel free to customize SqLVim according to your preferences with lazy. Add plugins, mappings, or configurations as you see fit.
 - **Ease of Use**: With SqLVim it just works. It's simple yet effective.
+- **Lazy**: Thanks to the lazy package manager, adding your own functionality is easier than ever!
 
 ## How to Use/ Requirements 📖
 
@@ -22,23 +23,47 @@ Before using SqLVim you need these packages:
 - **Unix based system**: Windows works aswell but I recently switched to Arch Linux, so it will be more focussed on UNIX.
 
 ## IMPORTANT ⚠
-If you don't whether you should use the Windows or Unix version. GO WITH WINDOWS! Windows has less terminal functionality than Unix.
+If you don't know whether you should use the Windows or Unix version. GO WITH WINDOWS! Windows has less terminal functionality than Unix.
 Because of that you are not required to download toals like TMux if you don't feel like it.
 
-step 1. 📡 Download the code and put it in the folder/directory based on your system:
 
-**Unix**
-```
-~/.config/nvim
-```
+## 👨‍💻 Installing SqLVim 
+
+- **Step 1**: 
+You want to create a backup file for if this config is not what you are looking for.
+To backup you files.
+
 **Windows:**
+```bash
+Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak
+
+# optional but recommended
+Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
 ```
-Appdata/local/nvim
+**Unix:**
+```bash
+mv ~/.config/nvim{,.bak}
+
+# optional but recommended
+mv ~/.local/share/nvim{,.bak}
+mv ~/.local/state/nvim{,.bak}
+mv ~/.cache/nvim{,.bak}
 ```
-step 2. There is no step 2. Enjoy your nvim config!
+
+- **step 2**: 📡 Clone the repo by using this command in the CLI:
+
+**Windows:**
+```bash
+git clone https://github.com/SqLait/SqLVim/nvim $env:LOCALAPPDATA\nvim
+```
+**Unix**
+```bash
+git clone https://github.com/SqLait/SqLVim/nvim ~/.config/nvim
+```
+- **step 3**: There is no step 3. Enjoy your nvim config!
 
 ## What to expect the next major push 💾
-- **Adding debuggers?**: The file is there, but haven't actively tried working on it.
+- **Nui.nvim**: 👀.
 - **Transparency**: With the click of a button you have a transparent terminal editor.
 - **Custom LuaLine**: A more compact and less bulky lualine.
 - **Trouble.nvim**: This will add an error window in neovim to show errors in a better way.
@@ -54,9 +79,7 @@ Contributions are welcome! If you have any ideas for improvements, bug fixes, or
 
 This code falls under Appache-2.0. Make sure to read the license terms before using the code (or don't).
 
-## Acknowledgements 📃
+## Why are you still reading this?
+Get out and start coding! The bossman needs his project done!
 
-SqLVim is inspired by various Vim configurations and the vibrant Vim community. Special thanks to all the contributors and plugin developers who make Vim such a powerful tool for editing.
-So I don't have to use VsCode :D
-
-Happy Vimming!
+Thank you for using SqLVim! Happy Vimming!
