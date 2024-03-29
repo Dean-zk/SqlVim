@@ -54,11 +54,11 @@ mv ~/.cache/nvim{,.bak}
 
 **Windows:**
 ```bash
-git clone https://github.com/SqLait/SqLVim $env:LOCALAPPDATA\nvim
+svn export https://github.com/SqLait/SqLVim/trunk/nvim $env:LOCALAPPDATA\nvim
 ```
 **Unix**
 ```bash
-git clone https://github.com/SqLait/SqLVim ~/.config/nvim
+svn export https://github.com/SqLait/SqLVim/trunk/nvim ~/.config/nvim
 ```
 - **step 3**: There is no step 3. Enjoy your nvim config!
 
