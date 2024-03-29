@@ -10,7 +10,7 @@ return {
     config = function()
       require("mason-lspconfig").setup({
         ensure_installed = {
-          "lua_ls", "clangd", "csharp_ls", "hls", "tsserver",
+          "lua_ls", "clangd", "csharp_ls", "tsserver",
           "pylsp", "rust_analyzer"
         }
       })
@@ -32,9 +32,6 @@ return {
         capabilities = capabilities
       })
       lspconfig.csharp_ls.setup({
-        capabilities = capabilities
-      })
-      lspconfig.hls.setup({
         capabilities = capabilities
       })
       lspconfig.pylsp.setup({
