@@ -58,7 +58,7 @@ git clone https://github.com/SqLait/SqLVim/nvim $env:LOCALAPPDATA\nvim
 ```
 **Unix**
 ```bash
-git clone https://github.com/SqLait/SqLVim/nvim ~/.config/nvim
+git clone https://github.com/SqLait/SqLVim/nvim-UNIX ~/.config/nvim
 ```
 - **step 3**: There is no step 3. Enjoy your nvim config!
 
