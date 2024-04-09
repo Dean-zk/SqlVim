@@ -1,6 +1,8 @@
-## ⚠ Note regarding SqLVim v1.2.0:
-The new SqLVim update should launch soon, however there is a new component library I'm planning on using for this project. Because of that it will probably take a little longer for future updates.
-I will do my best releasing this as soon as possible 🙏
+## ⚠ Note regarding the next SqLVim update:
+SqLVim is still being worked on. However I decided to take a different approach. I will rewrite the entire neovim config to make seperation of files better and more reasonable. In the next update, a lot of the plugins I used will either no longer be included, or will be changed for a different plugin. The main reason being is that some plugins will give a better UI, others better customizability, and some of them better performance. If you didn't get it. Yes this wil be a major update. Keep tight,
+SqLVim will soon be back with a new fully fledged editor.
+
+~SqLait
 
 ## SqLVim
 
