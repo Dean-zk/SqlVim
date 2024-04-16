@@ -1,12 +1,9 @@
-## ⚠ Note regarding the next SqLVim update:
-SqLVim is still being worked on. However I decided to take a different approach. I will rewrite the entire neovim config to make seperation of files better and more reasonable. In the next update, a lot of the plugins I used will either no longer be included, or will be changed for a different plugin. The main reason being is that some plugins will give a better UI, others better customizability, and some of them better performance. If you didn't get it. Yes this wil be a major update. Keep tight,
-SqLVim will soon be back with a new fully fledged editor.
-
-~SqLait
-
-## SqLVim
+## SqLVim v2
 
 SqLVim is a minimalist Vim configuration, crafted to offer the power of modern IDEs while maintaining the lightweight and fast nature of Vim. The primary focus of this configuration is to eliminate lag, particularly when using the `x` command to delete characters in Neovim. This is a major issue in popular configs, most well known LazyNvim.
+
+What is different from v1? v2 made some aggresive changes to the way how the files were structured, more sensible keybinds, more performant code and easier extendability.
+The reason why I did this was because I hated how the first version looked/worked. Especially when it came down to adding pluggins. This should be a lot better to work with than before.
 
 ## Why SqLVim?
 
@@ -64,14 +61,14 @@ git clone https://github.com/SqLait/SqLVim ~/.config/nvim
 ```
 - **step 3**: There is no step 3. Enjoy your nvim config!
 
-## What to expect the next major push 💾
-- **Nui.nvim**: 👀.
-- **Transparency**: With the click of a button you have a transparent terminal editor.
-- **Custom LuaLine**: A more compact and less bulky lualine.
-- **Trouble.nvim**: This will add an error window in neovim to show errors in a better way.
-- **Custom errors**: Adding a different way of showing errors.
-- **Cleaning up files**: To enhance performance and keep it bare bone I will try to clean up the files.
-- **Formatting fix**: I hate the way formatting works right now so I will do my best fixing it in the future.
+## What is new?
+- Complete revamp or change of all plugins used in the project.
+- File tree is not only cleaned up, more readable and better seperation. Also neo-tree has been changed with nvim-tree for better customization.
+- All keybindings have been changed. Why? Because F**k you thats why.
+- Plugins can now work together in a better way.
+- Now you really have the power of an IDE with the performance of gods favorite modal editor.
+- Catppuccin is still the only and best colorscheme.
+- Some ui changes for a better look. Feel free to push some changes to the github if you want to see certain changes.
 
 ## Contributing ❤
 
