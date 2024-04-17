@@ -19,11 +19,12 @@ Before using SqLVim you need these packages:
 - **NeoVim**: preferably the latest version.
 - **Git**: To pull changes.
 - **NerdFont**: to display icons.
-- **Unix based system**: Windows works aswell but I recently switched to Arch Linux, so it will be more focussed on UNIX.
+- **MinGW**: for snippets to load correctly.
 
 ## IMPORTANT ⚠
-If you don't know whether you should use the Windows or Unix version. GO WITH WINDOWS! Windows has less terminal functionality than Unix.
-Because of that you are not required to download toals like TMux if you don't feel like it. When following the download steps. Please make sure to remove the folder you don't need
+There are issues when it comes to gitsigns. This error only appears on windows and I have not been able to discover the bug.
+You will also get a lot of snippets to fail if you don't have mingw installed. At the moment linux just works a lot better due to
+needed software and tools for this project being pre-installed. Please contribute your findings with a quick fix.
 
 
 ## 👨‍💻 Installing SqLVim 
