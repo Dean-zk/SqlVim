@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ { import = "sql.plugins" }, { import = "sql.plugins.lsp" } }, {
+require("lazy").setup({ { import = "sql.plugins" }, { import = "sql.plugins.lsp" }, { import = "sql.plugins.modules" } }, {
   checker = {
     enabled = true,
     notify = false,
