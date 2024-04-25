@@ -68,6 +68,9 @@ return {
     })
 
     -- used to enable autocompletion (assign to every lsp server config)
+    local on_attach = function(client, bufnr)
+      local opts = { noremap=true, silent=true }
+    end
     local capabilities = cmp_nvim_lsp.default_capabilities()
 
     -- Change the Diagnostic symbols in the sign column (gutter)
@@ -101,11 +104,6 @@ return {
           capabilities = capabilities,
         })
       end,
-      ["hls"] = function()
-        lspconfig["hls"].setup({
-          capabilities = capabilities,
-        })
-      end,
       ["pylsp"] = function()
         lspconfig["pylsp"].setup({
           capabilities = capabilities,
@@ -118,6 +116,13 @@ return {
       end,
       ["rust_analyzer"] = function()
         lspconfig["rust_analyzer"].setup({
+          capabilities = capabilities,
+        })
+      end,
+      ["elixirls"] = function()
+        lspconfig["elixirls"].setup({
+          cmd = { "elixir-ls" },
+          on_attach = on_attach,
           capabilities = capabilities,
         })
       end,

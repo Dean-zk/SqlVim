@@ -20,3 +20,9 @@ opt.clipboard:append("unnamedplus")
 -- split windows
 opt.splitright = true
 opt.splitbelow = true
+
+-- set cursor line
+opt.cursorline = false
+
+-- Turn of swap file
+opt.swapfile = false
