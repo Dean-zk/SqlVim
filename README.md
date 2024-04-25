@@ -63,13 +63,11 @@ git clone https://github.com/SqLait/SqLVim ~/.config/nvim
 - **step 3**: There is no step 3. Enjoy your nvim config!
 
 ## What is new?
-- Complete revamp or change of all plugins used in the project.
-- File tree is not only cleaned up, more readable and better seperation. Also neo-tree has been changed with nvim-tree for better customization.
-- All keybindings have been changed. Why? Because F**k you thats why.
-- Plugins can now work together in a better way.
-- Now you really have the power of an IDE with the performance of gods favorite modal editor.
-- Catppuccin is still the only and best colorscheme.
-- Some ui changes for a better look. Feel free to push some changes to the github if you want to see certain changes.
+- Added new options for customization.
+- new keymaps for vim split naviagtion.
+- new keymaps for terminal navigation.
+- new keymaps for indenting and dragging text.
+- Theme switcher with telescope(telescope themes, catppuccin, rose-pine, nord, gruvbox). Switching themes is not permanent. This will be fixed in later versions.
 
 ## Contributing ❤
 
