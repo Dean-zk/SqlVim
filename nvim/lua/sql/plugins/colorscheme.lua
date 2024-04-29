@@ -11,8 +11,6 @@ return {
           light = "latte",
           dark = "mocha",
         },
-        transparent_background = false,
-        show_end_of_buffer = false,
         term_colors = false,
         dim_inactive = {
           enabled = false,
@@ -59,6 +57,7 @@ return {
     {
       "rose-pine/neovim",
       name = "rose-pine",
+      event = "VeryLazy",
       config = function()
         require("rose-pine").setup({
           variant = "auto", -- auto, main, moon, or dawn
@@ -132,9 +131,11 @@ return {
     {
       "arcticicestudio/nord-vim",
       name = "nord",
+      event = "VeryLazy",
     },
     {
       "ellisonleao/gruvbox.nvim",
+      event = "VeryLazy",
       config = function()
         require("gruvbox").setup({
           terminal_colors = true, -- add neovim terminal colors
@@ -161,6 +162,11 @@ return {
           transparent_mode = false,
         })
       end
-    }
+    },
+    {
+      "sainnhe/gruvbox-material",
+      name = "gruvbox-material",
+      event = "VeryLazy"
+    },
   }
 }
