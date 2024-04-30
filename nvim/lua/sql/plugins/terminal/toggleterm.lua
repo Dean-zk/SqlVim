@@ -32,7 +32,9 @@ return
       })
 
       --local Terminal  = require('toggleterm.terminal').Terminal
-      vim.keymap.set('n', '<leader>tt', '<cmd>:ToggleTerm<CR>')
+      keymap = vim.keymap
+
+      keymap.set('n', '<leader>tt', '<cmd>:ToggleTerm<CR>')
       In = vim.fn
 
       function Open_terminal(mode, index)
@@ -40,11 +42,13 @@ return
       end
 
       -- Horizontal mode
-      vim.keymap.set('n', '<leader>th', '<cmd>lua Open_terminal("horizontal", In.input("Enter terminal index: "))<cr>')
+      keymap.set('n', '<leader>th', '<cmd>lua Open_terminal("horizontal", In.input("Enter terminal index: "))<cr>')
       -- Vertical mode
-      vim.keymap.set ('n', '<leader>tv', '<cmd>lua Open_terminal("vertical", In.input("Enter terminal index: "))<cr>')
+      keymap.set ('n', '<leader>tv', '<cmd>lua Open_terminal("vertical", In.input("Enter terminal index: "))<cr>')
       -- Float mode
-      vim.keymap.set ('n', '<leader>tf', '<cmd>lua Open_terminal("float", In.input("Enter terminal index: "))<cr>')
-      vim.keymap.set ('n', '<leader>ta', '<cmd>lua Open_terminal("tab", In.input("Enter terminal index: "))<cr>')
+      keymap.set ('n', '<leader>tf', '<cmd>lua Open_terminal("float", In.input("Enter terminal index: "))<cr>')
+      keymap.set ('n', '<leader>ta', '<cmd>lua Open_terminal("tab", In.input("Enter terminal index: "))<cr>')
+      -- Open a toggled terminal
+      keymap.set('n', '<leader>ts', '<cmd>TermSelect<cr>')
     end,
 }
