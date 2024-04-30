@@ -22,9 +22,9 @@ Before using SqLVim you need these packages:
 - **MinGW**: for snippets to load correctly.
 
 ## IMPORTANT ⚠
-There are issues when it comes to gitsigns. This error only appears on windows and I have not been able to discover the bug.
-You will also get a lot of snippets to fail if you don't have mingw installed. At the moment linux just works a lot better due to
-needed software and tools for this project being pre-installed. Please contribute your findings with a quick fix.
+There might be a small pause when it comes to the development of SqLVim. I have been busy trying to restructure everything to get a good balance between easy plugin extension and easy navigation through the project files.
+This was done in order to start working on the next big update. A complete revamp of the ui. Right now I just don't really like how the ui looks and I want to have something like nvchad. This will take some time as I have to find ways to kind off reverse
+engineer the NvChad UI. There will still be small bug fixes and small changes or plugins added but a major revamp is the reason behind slower development.
 
 
 ## 👨‍💻 Installing SqLVim 
