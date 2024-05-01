@@ -2,21 +2,12 @@ return
 {
     'akinsho/toggleterm.nvim',
     version = "*",
-    opts = {
-      --[[ things you want to change go here]]
-    },
     config = function()
       require("toggleterm").setup({
-        hide_numbers = true,
-        autochdir = false, -- when neovim changes it current directory the terminal will change it's own when next it's opened
         direction = "float",
-        close_on_exit = true, --close when the terminal proccess closes
-        shade_terminals = false,
         shell = vim.o.shell, --setting the standard vim shell. 
 
         start_in_insert = true,
-        insert_mappings = true, -- whether or not the open mapping applies in insert mode
-        terminal_mappings = true, -- whether or not the open mapping applies in the opened terminals
 
         highlights = {
           NormalFloat = {
@@ -32,15 +23,15 @@ return
       })
 
       --local Terminal  = require('toggleterm.terminal').Terminal
-      keymap = vim.keymap
-
-      keymap.set('n', '<leader>tt', '<cmd>:ToggleTerm<CR>')
+      local keymap = vim.keymap
       In = vim.fn
 
       function Open_terminal(mode, index)
         vim.cmd(index .."ToggleTerm direction=".. mode)
       end
 
+      --Toggle the terminal in the set direction
+      keymap.set('n', '<leader>tt', '<cmd>:ToggleTerm<CR>')
       -- Horizontal mode
       keymap.set('n', '<leader>th', '<cmd>lua Open_terminal("horizontal", In.input("Enter terminal index: "))<cr>')
       -- Vertical mode
