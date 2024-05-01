@@ -1,6 +1,7 @@
 vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt
+local g = vim.g
 
 -- tabs & indentation
 opt.tabstop = 2
@@ -26,3 +27,6 @@ opt.cursorline = false
 
 -- Turn of swap file
 opt.swapfile = false
+
+-- Toggle theme
+g.toggle_theme_icon = "   "

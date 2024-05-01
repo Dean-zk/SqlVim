@@ -48,4 +48,3 @@ keymap.set("t", "<C-Up>", "<cmd>resize -2<CR>")
 keymap.set("t", "<C-Down>", "<cmd>resize +2<CR>")
 keymap.set("t", "<C-Left>", "<cmd>vertical resize -2<CR>")
 keymap.set("t", "<C-Right>", "<cmd>vertical resize +2<CR>")
-
