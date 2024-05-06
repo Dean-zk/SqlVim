@@ -15,7 +15,7 @@ require("lazy").setup({
   { import = "sql.plugins.lsp" }, { import = "sql.plugins.modules" },
   { import = "sql.plugins.ui" }, { import = "sql.plugins.terminal"}, { import = "sql.plugins.dependencies" },
   { import = "sql.plugins.comments"}, { import = "sql.plugins.syntax" }, { import = "sql.plugins.misc" },
-  { import = "sql.plugins.completion"} },
+  { import = "sql.plugins.completion"}, { import = "sql.plugins.git" }, },
   {
   checker = {
     enabled = true,
@@ -23,5 +23,13 @@ require("lazy").setup({
   },
   change_detection = {
     notify = false,
+  },
+  ui = {
+    icons = {
+      ft = "",
+      lazy = "󰂠 ",
+      loaded = "",
+      not_loaded = "",
+    },
   },
 })

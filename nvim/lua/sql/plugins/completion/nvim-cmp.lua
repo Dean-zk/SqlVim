@@ -8,8 +8,6 @@ return {
       "L3MON4D3/LuaSnip",
       -- follow latest release.
       version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-      -- install jsregexp (optional!).
-      build = "make install_jsregexp",
     },
     "saadparwaiz1/cmp_luasnip", -- for autocompletion
     "rafamadriz/friendly-snippets", -- useful snippets
@@ -25,14 +23,32 @@ return {
 
     cmp.setup({
       completion = {
-        completeopt = "menu,menuone,preview,noselect",
+        completeopt = "menu,menuone",
+      },
+
+      window = {
+        completion = {
+          border = "rounded", -- single|rounded|none
+          -- custom colors
+          winhighlight = "Normal:Normal,BorderBG:BorderBG", -- BorderBG|FloatBorder
+          side_padding = 0, -- padding at sides
+          col_offset = -3, -- move floating box left or right
+        },
+        documentation = {
+          border = "rounded", -- single|rounded|none
+          -- custom colors
+          --winhighlight = "Normal:Normal,BorderBG:BorderBG,CursorLine:CursorLineBG,Search:None", -- BorderBG|FloatBorder
+          winhighlight = "Normal:Normal,BorderBG:BorderBG", -- BorderBG|FloatBorder
+          side_padding = 0, -- padding at sides
+          col_offset = -3, -- move floating box left or right
+
+        },
       },
       snippet = { -- configure how nvim-cmp interacts with snippet engine
         expand = function(args)
           luasnip.lsp_expand(args.body)
         end,
       },
-
       mapping = cmp.mapping.preset.insert({
         ["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
         ["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
@@ -52,11 +68,25 @@ return {
 
       -- configure lspkind for vs-code like pictograms in completion menu
       formatting = {
-        format = lspkind.cmp_format({
-          maxwidth = 50,
-          ellipsis_char = "...",
-        }),
+        fields = { "kind", "abbr", "menu" },
+        format = function(entry, item)
+          -- vscode like icons for cmp autocompletion
+          local fmt = lspkind.cmp_format({
+            -- with_text = false, -- hide kind beside the icon
+            mode = "symbol_text",
+            maxwidth = 10,
+            ellipsis_char = "...",
+          })(entry, item)
+
+          local strings = vim.split(fmt.kind, "%s", { trimempty = true })
+
+          fmt.kind = fmt.kind .. " " -- just an extra space at the end
+          fmt.menu = strings[2] ~= nil and ("  " .. (strings[2] or "")) or ""
+
+          return fmt
+        end,
       },
     })
+    -- Add the final if statement here
   end,
 }

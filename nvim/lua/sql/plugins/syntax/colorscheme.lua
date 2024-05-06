@@ -8,8 +8,8 @@ return {
       require("catppuccin").setup({
         flavour = "mocha",
         no_italic = true,
+        transparent_background = false,
       })
-
       vim.cmd.colorscheme "catppuccin"
     end
   },
