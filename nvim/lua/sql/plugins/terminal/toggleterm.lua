@@ -1,6 +1,6 @@
 return
 {
-    'akinsho/toggleterm.nvim',
+    --[['akinsho/toggleterm.nvim']},
     version = "*",
     config = function()
       require("toggleterm").setup({
@@ -41,5 +41,5 @@ return
       keymap.set ('n', '<leader>ta', '<cmd>lua Open_terminal("tab", In.input("Enter terminal index: "))<cr>')
       -- Open a toggled terminal
       keymap.set('n', '<leader>ts', '<cmd>TermSelect<cr>')
-    end,
+    end,]]
 }

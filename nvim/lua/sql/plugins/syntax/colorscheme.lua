@@ -13,7 +13,7 @@ return {
       vim.cmd.colorscheme "catppuccin"
     end
   },
-  {
+  --[[{
     {
       "rose-pine/neovim",
       name = "rose-pine",
@@ -59,5 +59,5 @@ return {
       end
 
     },
-  }
+  }]]
 }

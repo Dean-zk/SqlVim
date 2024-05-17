@@ -26,3 +26,6 @@ opt.cursorline = false
 
 -- Turn of swap file
 opt.swapfile = false
+
+--Set line numbers
+opt.relativenumber = true
