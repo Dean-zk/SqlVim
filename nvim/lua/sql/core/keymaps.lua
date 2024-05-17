@@ -31,12 +31,6 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", {desc = "go to next tab"})
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", {desc = "go to previous tab"})
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", {desc = "open current buffer in new tab"})
 
--- Terminal movememnt
-keymap.set("t", "<C-h>", "<cmd>wincmd h<CR>")
-keymap.set("t", "<C-j>", "<cmd>wincmd j<CR>")
-keymap.set("t", "<C-k>", "<cmd>wincmd k<CR>")
-keymap.set("t", "<C-l>", "<cmd>wincmd l<CR>")
-
 -- Resize split windows
 keymap.set("n", "<C-Up>", ":resize -2<CR>")
 keymap.set("n", "<C-Down>", ":resize +2<CR>")
@@ -49,3 +43,12 @@ keymap.set("t", "<C-Down>", "<cmd>resize +2<CR>")
 keymap.set("t", "<C-Left>", "<cmd>vertical resize -2<CR>")
 keymap.set("t", "<C-Right>", "<cmd>vertical resize +2<CR>")
 
+-- Escape terminal
+keymap.set("t", "<Esc>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
+
+--buffer navigation
+keymap.set("n", "<leader>bd", "<Cmd>bd<CR>", {desc = "delete open buffer"})
+keymap.set("n", "<S-tab>", "<cmd>bprev<cr>", {desc = "Prev Buffer"})
+keymap.set("n", "<tab>", "<cmd>bnext<cr>", {desc = "Next Buffer"})
+keymap.set("n", "f<tab>", "<cmd>bfirst<cr>", {desc = "Jump to first buffer in the list"})
+keymap.set("n", "l<tab>", "<cmd>blast<cr>", {desc = "Jump to the last buffer in the list"})
