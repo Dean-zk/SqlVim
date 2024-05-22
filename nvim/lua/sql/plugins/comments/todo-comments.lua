@@ -1,5 +1,5 @@
 return {
-  "folke/todo-comments.nvim",
+  --[["folke/todo-comments.nvim"],
   event = { "BufReadPre", "BufNewFile" },
   dependencies = { "nvim-lua/plenary.nvim" },
   config = function()
@@ -17,5 +17,5 @@ return {
     end, { desc = "Previous todo comment" })
 
     todo_comments.setup()
-  end,
+  end,]]
 }

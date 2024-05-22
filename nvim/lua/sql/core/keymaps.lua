@@ -19,6 +19,9 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 keymap.set("v", "<", "<gv")
 keymap.set("v", ">", ">gv")
 
+-- Enter visual block mode
+--keymap.set('n', '/v', '<C-v>', { desc = "Enter visual block mode" })
+
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v", {desc = "split window vertically"})
 keymap.set("n", "<leader>sh", "<C-w>s", {desc = "split window horizontally"})
