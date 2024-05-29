@@ -28,14 +28,14 @@ return {
 
       window = {
         completion = {
-          border = "rounded", -- single|rounded|none
+          border = "none", -- single|rounded|none
           -- custom colors
           winhighlight = "Normal:Normal,BorderBG:BorderBG", -- BorderBG|FloatBorder
           side_padding = 0, -- padding at sides
           col_offset = -3, -- move floating box left or right
         },
         documentation = {
-          border = "rounded", -- single|rounded|none
+          border = "none", -- single|rounded|none
           -- custom colors
           --winhighlight = "Normal:Normal,BorderBG:BorderBG,CursorLine:CursorLineBG,Search:None", -- BorderBG|FloatBorder
           winhighlight = "Normal:Normal,BorderBG:BorderBG", -- BorderBG|FloatBorder
