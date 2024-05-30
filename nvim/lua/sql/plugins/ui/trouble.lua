@@ -1,6 +1,6 @@
 return {
   "folke/trouble.nvim",
-  dependencies = { "nvim-tree/nvim-web-devicons", "folke/todo-comments.nvim" },
+  dependencies = { "nvim-tree/nvim-web-devicons" },
   opts = {
     height = 7
   },
@@ -10,6 +10,5 @@ return {
     { "<leader>xd", "<cmd>TroubleToggle document_diagnostics<CR>", desc = "Open trouble document diagnostics" },
     { "<leader>xq", "<cmd>TroubleToggle quickfix<CR>", desc = "Open trouble quickfix list" },
     { "<leader>xl", "<cmd>TroubleToggle loclist<CR>", desc = "Open trouble location list" },
-    { "<leader>xt", "<cmd>TodoTrouble<CR>", desc = "Open todos in trouble" },
   },
 }
