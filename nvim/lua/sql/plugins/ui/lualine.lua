@@ -33,6 +33,20 @@ return {
         return gitdir and #gitdir > 0 and #gitdir < #filepath
       end,
     }
+     local function get_os()
+      local os_info = vim.loop.os_uname().sysname
+      if os_info == 'Windows_NT' then
+        return ''
+      elseif os_info == 'Darwin' then
+        return ''
+      elseif os_info == 'Linux' then
+        return '󰣇'
+      elseif os_info == 'BSD' then
+        return '󰣠'
+      else
+        return 'UNKNOWN'
+      end
+    end
 
     -- Config
     local config = {
@@ -210,9 +224,9 @@ return {
     }
 
     ins_right {
-      'fileformat',
-      fmt = string.upper,
-      icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
+      function()
+        return get_os()
+      end,
       color = { fg = colors.green, gui = 'bold' },
     }
 
